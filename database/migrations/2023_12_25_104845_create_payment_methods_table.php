@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string('name');
             $table->string('code');
-            $table->string('thumbnail')->nullable();
+            $table->text('thumbnail')->nullable();
             $table->enum('status', ['active', 'inactive']);
             $table->softDeletes();
             $table->timestamps();
