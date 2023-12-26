@@ -32,7 +32,7 @@ class PaymentMethodSeeder extends Seeder
             ],
             [
                 'name' => 'Bank BCA',
-                'code' => 'bni_va',
+                'code' => 'bca_va',
                 'status' => 'active',
                 'created_at' => now(),
                 'updated_at' => now(),
