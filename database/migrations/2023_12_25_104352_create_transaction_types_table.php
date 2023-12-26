@@ -16,7 +16,7 @@ return new class extends Migration
             $table->string('name');
             $table->string('code');
             $table->enum('action', ['cr', 'dr']);
-            $table->string('thumbnail')->nullable();
+            $table->text('thumbnail')->nullable();
             $table->softDeletes();
             $table->timestamps();
         });
