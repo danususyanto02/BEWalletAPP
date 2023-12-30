@@ -1,7 +1,10 @@
 <?php
 
 use App\Http\Controllers\Api\AuthController;
+use App\Http\Controllers\Api\DataPlanController;
+use App\Http\Controllers\Api\OperatorCardController;
 use App\Http\Controllers\Api\TopupController;
+use App\Http\Controllers\Api\TransferController;
 use App\Http\Controllers\WebhookController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
@@ -24,6 +27,9 @@ use Illuminate\Support\Facades\Route;
 Route::post('register', [AuthController::class, 'register']);
 Route::post('login', [AuthController::class, 'login']);
 Route::post('payment/webhook', [WebhookController::class, 'update']);
+Route::post('transfer', [TransferController::class, 'store']);
+Route::post('dataplan', [DataPlanController::class, 'store']);
+Route::get('list-operator', [OperatorCardController::class, 'index']);
 
 
 

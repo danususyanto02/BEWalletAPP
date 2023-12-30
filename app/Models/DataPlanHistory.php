@@ -9,11 +9,11 @@ class DataPlanHistory extends Model
 {
     use HasFactory;
 
-    protected $table = 'data_plans_histories';
+    protected $table = 'data_plan_histories';
+
     protected $fillable = [
         'data_plan_id',
         'transaction_id',
-        'phone_number',
-
+        'phone_number'
     ];
 }
