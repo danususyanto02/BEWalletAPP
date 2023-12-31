@@ -17,6 +17,7 @@ class DatabaseSeeder extends Seeder
         $this->call(OperatorCardSeeder::class);
         $this->call(DataPlanSeeder::class);
         $this->call(TransactionTypeSeeder::class);
+        $this->call(TipSeeder::class);
         // \App\Models\User::factory(10)->create();
 
         // \App\Models\User::factory()->create([
