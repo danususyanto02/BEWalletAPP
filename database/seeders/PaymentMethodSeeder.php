@@ -15,6 +15,14 @@ class PaymentMethodSeeder extends Seeder
     {
         DB::table('payment_methods')->insert([
             [
+                'name' => 'WalletAPP',
+                'code' => 'walletapp',
+                'status' => 'active',
+                'created_at' => now(),
+                'updated_at' => now(),
+
+            ],
+            [
                 'name' => 'Bank Mandiri',
                 'code' => 'mandiri_va',
                 'status' => 'active',

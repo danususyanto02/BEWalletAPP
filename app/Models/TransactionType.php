@@ -16,6 +16,7 @@ class TransactionType extends Model
         'code',
         'action',
         'thumbnail'
-
     ];
+
+
 }
