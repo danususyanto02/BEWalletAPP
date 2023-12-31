@@ -14,6 +14,6 @@ class DataPlan extends Model
         'name',
         'price',
         'operator_id',
-
     ];
+
 }

@@ -58,4 +58,9 @@ class User extends Authenticatable implements JWTSubject
         'email_verified_at' => 'datetime',
         'password' => 'hashed',
     ];
+
+
+    public function userTransaction(){
+        return $this->hasMany(Transaction::class,'user_id');
+    }
 }
