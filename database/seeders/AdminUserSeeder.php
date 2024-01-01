@@ -16,7 +16,7 @@ class AdminUserSeeder extends Seeder
     {
         DB::table('admin_users')->insert([
             'name' => 'Administrator',
-            'email'=>'admin@admin.com,',
+            'email'=>'admin@admin.com',
             'password' => bcrypt('admin@123'),
         ]);
     }
