@@ -64,14 +64,15 @@ return [
     */
 
     'providers' => [
+        'admin_users' => [
+            'driver' => 'eloquent',
+            'model' => App\Models\AdminUser::class,
+        ],
         'users' => [
             'driver' => 'eloquent',
             'model' => App\Models\User::class,
         ],
-        'admin_users' => [
-            'driver' => 'eloquent',
-            'table' => App\Models\AdminUser::class,
-        ],
+
     ],
 
     /*
@@ -100,6 +101,8 @@ return [
             'expire' => 60,
             'throttle' => 60,
         ],
+
+
     ],
 
     /*
